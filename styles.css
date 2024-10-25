@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+.banner {
+    background: url('./Resources/Banner.jpg') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+/* Abstract Section */
+.abstract {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.abstract h2 {
+    color: darkred;
+    margin-bottom: 1rem;
+}
+
+.abstract p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Members Section */
+.team {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 220px;
+}
+
+.team h2 {
+    color: darkred;
+    margin-bottom: 1.5rem;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Allow team members to wrap on smaller screens */
+    max-height: 200px;
+    max-width: 2000px;
+    padding-bottom: 50px;
+}
+
+.Gabe{
+    width: 300px;  /* You can adjust this size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+}
+.Nico{
+    width: 300px;  /* You can adjust this size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+}
+.Christopher{
+    width: 300px;  /* You can adjust this size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+}
+.Ryan{
+    width: 300px;  /* You can adjust this size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+}
+.Zac{
+    width: 300px;  /* You can adjust this size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+}
+
+
+/* Content Section */
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content h2 {
+    color: darkred;
+    margin-bottom: 1.5rem;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.content-grid img {
+    max-width: 100%; /* Ensure images are responsive within their containers */
+    width: 300px;  /* Restrict the width of the image to a smaller size */
+    height: auto;  /* Keep aspect ratio intact */
+    border: 1px solid #ddd;
+}
+
+.resume-container h1{
+    align-items: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding-left: 17vw;
+    padding-top: 5vw;
+}
+
+.resume-pdf{
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
