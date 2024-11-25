@@ -4,96 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Generator</title>
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Inline styles for simplicity */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            box-sizing: border-box;
+            box-sizing: border-box; /* Consistent box model across elements */
         }
         
         .banner {
             text-align: center;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /* Light gray background for the banner */
         }
         
         .abstract, .team, .content {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 20px; /* Add spacing around sections */
+            max-width: 1200px; /* Limit content width for better readability */
+            margin: 0 auto; /* Center-align sections horizontally */
         }
         
         .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            justify-items: center;
-            align-items: center;
+            display: grid; /* Use grid layout for team members */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+            gap: 15px; /* Add space between grid items */
+            justify-items: center; /* Center-align items in each grid cell */
+            align-items: center; /* Center-align items vertically */
         }
 
         .team-grid img {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
+            width: 100%; /* Make images responsive */
+            max-width: 150px; /* Limit maximum width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Crop images to fit the circle */
         }
         
         .content-grid iframe {
-            width: 100%;
-            min-height: 100vh;
-            border: none;
+            width: 100%; /* Full width iframe for embedding content */
+            min-height: 100vh; /* Set minimum height to full viewport */
+            border: none; /* Remove default border */
         }
         
         footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #222;
-            color: #fff;
-            font-size: 0.9em;
+            text-align: center; /* Center-align footer text */
+            padding: 10px 0; /* Add vertical spacing */
+            background-color: #222; /* Dark background for footer */
+            color: #fff; /* White text for contrast */
+            font-size: 0.9em; /* Slightly smaller font size */
         }
     </style>
 </head>
 <body>
 <!-- Header Section -->
 <header>
+    <!-- Banner at the top of the page -->
     <div class="banner">
-        <h1>Exam Generator</h1>
+        <h1>Exam Generator</h1> <!-- Page title -->
     </div>
 </header>
 
 <!-- Abstract Section -->
 <section class="abstract">
-    <h2>Abstract</h2>
+    <h2>Abstract</h2> <!-- Section heading -->
     <p>
+        <!-- Description of the project -->
         This report introduces ExamGenerator, an AI-powered web application designed to automate the creation of exam questions and answers from document inputs such as PDFs, Word, and text files. The tool utilizes ChatGPT's natural language processing (NLP) capabilities to convert educational materials into comprehensive exams, including multiple-choice, true/false, and multiple-selection questions. The app also supports batch processing for handling multiple documents and provides compatibility with various learning management systems (LMS) through export options. This report outlines the motivation behind ExamGenerator, its system architecture, proposed approaches, and related work in the field.
     </p>
 </section>
 
 <!-- Team Members Section -->
 <section class="team">
-    <h2>Team Members</h2>
+    <h2>Team Members</h2> <!-- Section heading -->
     <div class="team-grid">
-        <img src="Gabe.jpg" alt="Gabe">
-        <img src="Nico.jpg" alt="Nico">
-        <img src="Kristopher.jpg" alt="Christopher">
-        <img src="Zac.jpg" alt="Zac">
-        <img src="Ryan.jpeg" alt="Ryan">
+        <!-- Profile pictures of team members -->
+        <img src="Gabe.jpg" alt="Gabe"> <!-- Team member Gabe -->
+        <img src="Nico.jpg" alt="Nico"> <!-- Team member Nico -->
+        <img src="Kristopher.jpg" alt="Christopher"> <!-- Team member Christopher -->
+        <img src="Zac.jpg" alt="Zac"> <!-- Team member Zac -->
+        <img src="Ryan.jpeg" alt="Ryan"> <!-- Team member Ryan -->
     </div>
 </section>
 
 <!-- Content Section -->
 <section class="content">
-    <h2>Content</h2>
+    <h2>Content</h2> <!-- Section heading -->
     <div class="content-grid">
-        <iframe src="Phase One.pdf"></iframe>
+        <!-- Embedded content (PDF in this case) -->
+        <iframe src="Phase One.pdf"></iframe> <!-- Embedded PDF document -->
     </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2024 Project Team. All rights reserved.</p>
+    <!-- Footer content -->
+    <p>&copy; 2024 Project Team. All rights reserved.</p> <!-- Copyright notice -->
 </footer>
 </body>
 </html>
