@@ -1,140 +1,127 @@
+/* Reset margins, padding, and ensure consistent box-sizing across all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General body styling for font, line-height, and background color */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Set default font */
+    line-height: 1.6; /* Improve readability */
+    background-color: #f4f4f4; /* Light gray background for better contrast */
+    color: #333; /* Dark gray text for readability */
 }
 
 /* Header Section */
 .banner {
-    background: url('Banner.jpg') no-repeat center center/cover;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+    background: url('Banner.jpg') no-repeat center center/cover; /* Add a responsive background image */
+    height: 200px; /* Fixed height for the banner */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: black; /* Text color inside the banner */
 }
 
 .banner h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Large font size for the title */
 }
 
 /* Abstract Section */
 .abstract {
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff;
+    text-align: center; /* Center-align text */
+    padding: 2rem; /* Add spacing around the section */
+    background-color: #fff; /* White background for contrast */
 }
 
 .abstract h2 {
-    color: darkred;
-    margin-bottom: 1rem;
+    color: darkred; /* Set a prominent color for the heading */
+    margin-bottom: 1rem; /* Add spacing below the heading */
 }
 
 .abstract p {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Limit paragraph width for better readability */
+    margin: 0 auto; /* Center-align the paragraph */
 }
 
 /* Team Members Section */
 .team {
-    background-color: #fff;
-    text-align: center;
-    padding-bottom: 220px;
+    background-color: #fff; /* White background for clarity */
+    text-align: center; /* Center-align content */
+    padding-bottom: 220px; /* Extra spacing at the bottom for layout balance */
 }
 
 .team h2 {
-    color: darkred;
-    margin-bottom: 1.5rem;
+    color: darkred; /* Set the heading color */
+    margin-bottom: 1.5rem; /* Add spacing below the heading */
 }
 
 .team-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Allow team members to wrap on smaller screens */
-    max-height: 200px;
-    max-width: 2000px;
-    padding-bottom: 50px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align team members horizontally */
+    gap: 1.5rem; /* Add spacing between team members */
+    flex-wrap: wrap; /* Allow members to wrap on smaller screens */
+    max-height: 200px; /* Constrain grid height */
+    max-width: 2000px; /* Constrain grid width */
+    padding-bottom: 50px; /* Extra spacing below the grid */
 }
 
-.Gabe{
-    width: 300px;  /* You can adjust this size as needed */
-    height: auto;  /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t overflow */
+/* Individual image styles for team members */
+.Gabe,
+.Nico,
+.Christopher,
+.Ryan,
+.Zac {
+    width: 300px; /* Set a fixed width for consistency */
+    height: auto; /* Maintain the original aspect ratio */
+    max-width: 100%; /* Ensure images don’t exceed their container */
 }
-.Nico{
-    width: 300px;  /* You can adjust this size as needed */
-    height: auto;  /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t overflow */
-}
-.Christopher{
-    width: 300px;  /* You can adjust this size as needed */
-    height: auto;  /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t overflow */
-}
-.Ryan{
-    width: 300px;  /* You can adjust this size as needed */
-    height: auto;  /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t overflow */
-}
-.Zac{
-    width: 300px;  /* You can adjust this size as needed */
-    height: auto;  /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn’t overflow */
-}
-
 
 /* Content Section */
 .content {
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem; /* Add spacing around the section */
+    text-align: center; /* Center-align the content */
 }
 
 .content h2 {
-    color: darkred;
-    margin-bottom: 1.5rem;
+    color: darkred; /* Set the heading color */
+    margin-bottom: 1.5rem; /* Add spacing below the heading */
 }
 
 .content-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align content horizontally */
+    gap: 1.5rem; /* Add spacing between elements */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
+/* Style for images in the content grid */
 .content-grid img {
     max-width: 100%; /* Ensure images are responsive within their containers */
-    width: 300px;  /* Restrict the width of the image to a smaller size */
-    height: auto;  /* Keep aspect ratio intact */
-    border: 1px solid #ddd;
+    width: 300px; /* Restrict image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Add a light border for contrast */
 }
 
-.resume-container h1{
-    align-items: center;
-    font-size: 70px;
-    margin-bottom: 20px;
-    padding-left: 17vw;
-    padding-top: 5vw;
+/* Resume Section */
+.resume-container h1 {
+    align-items: center; /* Align heading */
+    font-size: 70px; /* Large font size for emphasis */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    padding-left: 17vw; /* Add padding to the left for alignment */
+    padding-top: 5vw; /* Add padding to the top for spacing */
 }
 
-.resume-pdf{
-    padding-left: 15vw;
-    padding-right: 15vw;
-
+.resume-pdf {
+    padding-left: 15vw; /* Add padding to the left for alignment */
+    padding-right: 15vw; /* Add padding to the right for alignment */
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for visibility */
+    text-align: center; /* Center-align text */
+    padding: 1rem 0; /* Add vertical padding */
+    margin-top: 2rem; /* Add spacing above the footer */
 }
