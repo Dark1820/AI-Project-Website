@@ -79,6 +79,12 @@ body {
 }
 
 /* Content Section */
+  .content-grid iframe {
+    width: 100%; /* Full width iframe for embedding content */
+    min-height: 100vh; /* Set minimum height to full viewport */
+    border: none; /* Remove default border */
+        }
+
 .content {
     padding: 2rem; /* Add spacing around the section */
     text-align: center; /* Center-align the content */
