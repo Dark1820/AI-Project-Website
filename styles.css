@@ -11,6 +11,9 @@ body {
     line-height: 1.6; /* Improve readability */
     background-color: #f4f4f4; /* Light gray background for better contrast */
     color: #333; /* Dark gray text for readability */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Consistent box model across elements */
 }
 
 /* Header Section */
@@ -57,13 +60,11 @@ body {
 }
 
 .team-grid {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center-align team members horizontally */
-    gap: 1.5rem; /* Add spacing between team members */
-    flex-wrap: wrap; /* Allow members to wrap on smaller screens */
-    max-height: 200px; /* Constrain grid height */
-    max-width: 2000px; /* Constrain grid width */
-    padding-bottom: 50px; /* Extra spacing below the grid */
+    display: grid; /* Use grid layout for team members */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Add space between grid items */
+    justify-items: center; /* Center-align items in each grid cell */
+    align-items: center; /* Center-align items vertically */
 }
 
 /* Individual image styles for team members */
