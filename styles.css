@@ -68,7 +68,6 @@ body {
 .team-grid img {
     width: 150px; /* Set a fixed width for all images */
     height: 150px; /* Set a fixed height for consistency */
-    border-radius: 50%; /* Ensure images are circular */
     object-fit: cover; /* Crop images to fit within the circle */
     max-width: 100%; /* Ensure images are responsive */
 }
