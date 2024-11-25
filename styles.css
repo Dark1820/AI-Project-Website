@@ -66,8 +66,8 @@ body {
 
 /* Team Member Images */
 .team-grid img {
-    width: 150%; /* Set a fixed width for all images */
-    height: 150%; /* Set a fixed height for consistency */
+    width: 200px; /* Set a fixed width for all images */
+    height: 200px; /* Set a fixed height for consistency */
 }
 
 /* Content Section */
