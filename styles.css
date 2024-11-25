@@ -11,9 +11,6 @@ body {
     line-height: 1.6; /* Improve readability */
     background-color: #f4f4f4; /* Light gray background for better contrast */
     color: #333; /* Dark gray text for readability */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box; /* Consistent box model across elements */
 }
 
 /* Header Section */
@@ -51,7 +48,7 @@ body {
 .team {
     background-color: #fff; /* White background for clarity */
     text-align: center; /* Center-align content */
-    padding-bottom: 220px; /* Extra spacing at the bottom for layout balance */
+    padding: 2rem; /* Add spacing around the section */
 }
 
 .team h2 {
@@ -67,24 +64,16 @@ body {
     align-items: center; /* Center-align items vertically */
 }
 
-/* Individual image styles for team members */
-.Gabe,
-.Nico,
-.Christopher,
-.Ryan,
-.Zac {
-    width: 300px; /* Set a fixed width for consistency */
-    height: auto; /* Maintain the original aspect ratio */
-    max-width: 100%; /* Ensure images don’t exceed their container */
+/* Team Member Images */
+.team-grid img {
+    width: 150px; /* Set a fixed width for all images */
+    height: 150px; /* Set a fixed height for consistency */
+    border-radius: 50%; /* Ensure images are circular */
+    object-fit: cover; /* Crop images to fit within the circle */
+    max-width: 100%; /* Ensure images are responsive */
 }
 
 /* Content Section */
-  .content-grid iframe {
-    width: 100%; /* Full width iframe for embedding content */
-    min-height: 100vh; /* Set minimum height to full viewport */
-    border: none; /* Remove default border */
-        }
-
 .content {
     padding: 2rem; /* Add spacing around the section */
     text-align: center; /* Center-align the content */
@@ -102,26 +91,23 @@ body {
     flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
-/* Style for images in the content grid */
-.content-grid img {
-    max-width: 100%; /* Ensure images are responsive within their containers */
-    width: 300px; /* Restrict image width */
-    height: auto; /* Maintain aspect ratio */
-    border: 1px solid #ddd; /* Add a light border for contrast */
+/* Embedded Content (e.g., iframe) */
+.content-grid iframe {
+    width: 100%; /* Full width iframe for embedding content */
+    min-height: 100vh; /* Set minimum height to full viewport */
+    border: none; /* Remove default border */
 }
 
 /* Resume Section */
 .resume-container h1 {
-    align-items: center; /* Align heading */
+    text-align: center; /* Center-align heading */
     font-size: 70px; /* Large font size for emphasis */
     margin-bottom: 20px; /* Add spacing below the heading */
-    padding-left: 17vw; /* Add padding to the left for alignment */
-    padding-top: 5vw; /* Add padding to the top for spacing */
+    padding: 5vw 0; /* Add padding to the top and bottom */
 }
 
 .resume-pdf {
-    padding-left: 15vw; /* Add padding to the left for alignment */
-    padding-right: 15vw; /* Add padding to the right for alignment */
+    padding: 0 15vw; /* Add padding to the left and right for alignment */
 }
 
 /* Footer Section */
